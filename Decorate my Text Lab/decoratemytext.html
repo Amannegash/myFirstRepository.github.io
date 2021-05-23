@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="decoratemytext.css" type="text/css" rel="stylesheet" />
+		<!--This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+		<!-- link to your script file here -->
+		<script src="decoratemytext.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Text Decorator</h1>
+		<div>
+			<img src="images/decorated.gif" alt="very decorated!" />
+		</div>
+		<!-- Your UI controls go here -->
+	<fieldset class="fix">
+			<legend>Text</legend>
+		<textarea id="textarea" placeholder="Type Your Text Here..." rows="4" cols="30"></textarea>
+	</fieldset>
+	<fieldset >
+		<legend>Decoration</legend>
+		<input type="button" value="Bigger Decorations!" onclick="interval()"/> <br /> <br />
+		<input type="button" value="Igpay Atinlay" onclick="pig()"/> <br /> <br />
+		<input type="button" value="Malkovitch" onclick="markov()"/> <br /> <br />
+		<input type="checkbox" id="bling" value="bling" onchange="boldText()"/> Bling<br/><br/>
+		<a href="../index.html"><img src="./home.jpg" alt="Aman" width="30" class="home">BACK TO HOME</a>
+
+	</fieldset>
+	
+	</body>
+</html>
