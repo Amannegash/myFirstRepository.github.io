@@ -1,0 +1,40 @@
+Javascript Exercises 
+1.What is the difference between the following 2 statements? 
+       setTimeout(booyah, 2000); 
+       setTimeout (booyah(), 2000);  Answer: This is a mistake because it calls the function immediately, rather than waiting the 2000ms!
+
+2. What do the following 2 alerts display (answer without running the code)? 
+var myfunc = function(a, x) { 
+           return a * x;
+    }; 
+  var x = myfunc(2, 3); 
+  var y = myfunc;
+     alert(x); 
+     alert(y(2,3)); 
+
+Answer : 6
+
+3.Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2  seconds that says “BOOYAH!” 
+setTimeout(booyah1, 2000); 
+Answer: setInterval(booyah1() {alert(“BOOYAH”);},2000)
+
+setTimeout(booyah2(), 2000);
+Answer: setInterval(booyah2() {alert(“BOOYAH”);},2000)
+
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)
+Answer : Unobtrusive JavaScript is the way of writing JavaScript language in which we properly separate Document Content and Script Content thus allowing us to make a clear distinction between them, keep my code clean and allows me to work on the javascript without touching the HTML or the CSS. Less error in our code, easy to update and to debug.
+- practical application :
+Example :  <input type="button" name="button" onclick="alert('Hello')" />
+-This code is a combination of HTML and javascript. So to make this code
+Unobtrusive separate them as
+1-HTML
+<input type="button" Id="button"/>      
+
+2-JAVASCRIPT
+var el = document.getElementById('button');
+  el.onclick = function(){
+  alert('Hello');
+};
+
+
+
