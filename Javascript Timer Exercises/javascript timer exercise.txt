@@ -1,3 +1,4 @@
+
 Javascript Exercises 
 1.What is the difference between the following 2 statements? 
        setTimeout(booyah, 2000); 
