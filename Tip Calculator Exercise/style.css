@@ -48,11 +48,3 @@ a:hover{
 .name::first-letter{
     font-size: 45px;
 }
-/*.list{
-    background-color:darkgray;
-    color: white;
-}
-.list > li{
-    text-decoration: underline;
-    color: magenta
-}*/
