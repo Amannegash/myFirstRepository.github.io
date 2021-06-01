@@ -31,7 +31,9 @@ their text color be blue.
  </ul>
  </div>
  <script>
+
      $("p + ul").css("background-color","blue");
+
 <!—INSERT YOUR JQUERY CODE HERE - - >
  </script>
  </body>
