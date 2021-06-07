@@ -1,12 +1,12 @@
 var http = require('http');
 var url = require('url');
 var fs = require('fs');
-var addmod = require('C:\Users\Aman Negash\Documents\GitHub\myFirstRepository.github.io\Simple Calculator Lab\addmode');
+var addmode = require('./addmode');
 http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
     var filename = "." + q.pathname;
     if (q.pathname=="/add.js")
-    addmod.add(req,res,q.query)
+    addmode.add(req,res,q.query)
     else
     fs.readFile(filename, function(err, data) {
         if (err) {
