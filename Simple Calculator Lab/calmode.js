@@ -1,23 +1,18 @@
+var result = 0;
 exports.add = function (req,res,vals) {
-    var operator = "";
-    var result = 0;
- 
-     operator =vals.operator;
-
-    if(operator == "+") {
         result = parseInt(vals.first) + parseInt(vals.second);
-    }
-    else if(operator == "-") {
+    };
+    exports.subtract = function (req,res,vals) {
         result = parseInt(vals.first) - parseInt(vals.second);
-    }
-    else if(operator == "x") {
+    };
+    exports.multiply = function (req,res,vals) {
         result = parseInt(vals.first) * parseInt(vals.second);
-    }
-    else{
-        result = parseInt(vals.first) / parseInt(vals.second);
-        
-    }
-    
+    };
+    exports.division = function (req,res,vals) {
+        result = (parseInt(vals.first)) / (parseInt(vals.second));    
+    };
+   
+    exports.displays = function (req,res,vals) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write("<!DOCTYPE html>");
     res.write("<html>");
@@ -28,7 +23,7 @@ exports.add = function (req,res,vals) {
     res.write("<p>The result will be: ");
     res.write(String(result) + "<br>");
     res.write("</p>");
-    res.write("<p><a href = 'index.html'>Another Calculation</a></p>")
+    res.write("<a href ='file:///C:/Users/Aman%20Negash/Documents/GitHub/myFirstRepository.github.io/Simple%20Calculator%20Lab/index.html'>Another Calculation</a>");
     res.write("</body>");
     res.write("</html>");
     return res.end();
